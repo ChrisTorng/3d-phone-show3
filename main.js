@@ -107,7 +107,7 @@ function loadModels(phonesData) {
                 // 調整模型大小和位置
                 const box = new THREE.Box3().setFromObject(gltf.scene);
                 const size = box.getSize(new THREE.Vector3()).length();
-                const scaleFactor = 2 / size;
+                const scaleFactor = 6 / size;
                 gltf.scene.scale.set(scaleFactor, scaleFactor, scaleFactor);
                 
                 // 置中模型
